@@ -10,7 +10,7 @@ export default function Page() {
   return (
     <div className="min-h-screen bg-slate-50">
       {/* Navi */}
-      <header className="bg-white border-b border-slate-200 fixed top-0 w-full z-30">
+      <header className="bg-teal-500 border-b border-slate-200 fixed top-0 w-full z-30">
         <div className="container mx-auto px-4 py-3">
           <Header/>
         </div>

@@ -14,16 +14,16 @@ const Header = () => {
           onClick={() => handleIsMenuToggle(!isMenuOpen)}
           className="p-2 -ml-2 mr-2 hover:bg-slate-100 rounded-full lg:hidden"
         >
-          {isMenuOpen ? <X className="w-6 h-6 text-slate-600"/> : <Menu className="w-6 h-6 text-slate-600"/>}
+          {isMenuOpen ? <X className="w-6 h-6 text-white"/> : <Menu className="w-6 h-6 text-white"/>}
         </button>
-        <h1 className="text-xl font-bold text-slate-800">勤怠管理システム</h1>
+        <h1 className="text-xl font-bold text-white">勤怠管理システム</h1>
       </div>
       <div className="flex items-center space-x-4">
-        <button className="p-2 hover:bg-slate-100 rounded-full">
-          <Bell className="w-5 h-5 text-slate-600"/>
+        <button className="p-2 rounded-full hover:bg-teal-600 hover:shadow transition-colors">
+          <Bell className="w-5 h-5 text-white"/>
         </button>
-        <button className="flex items-center space-x-2 p-2 hover:bg-slate-100 rounded-full">
-          <UserCircle className="w-6 h-6 text-slate-600"/>
+        <button className="flex items-center space-x-2 p-2 rounded-full hover:bg-teal-600 hover:shadow transition-colors">
+          <UserCircle className="w-6 h-6 text-white"/>
         </button>
       </div>
     </div>

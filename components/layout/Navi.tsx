@@ -4,7 +4,7 @@ import Button from "@/components/common/Button"
 
 const Navi = () => {
   return (
-    <div className="flex flex-col h-full">
+    <div className="flex flex-col h-full p-4 border rounded-md border-slate-200">
       <ul className="space-y-2">
         <li>
           <a href="#"
