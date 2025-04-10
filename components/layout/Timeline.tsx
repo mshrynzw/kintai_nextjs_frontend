@@ -1,7 +1,7 @@
 import React from "react"
 import {Clock, ChevronRight} from "lucide-react"
 import type {Stamp} from "@/types/stamp.types"
-import {useStamps} from "@/components/common/StampsProvider"
+import {useStamps} from "@/providers/StampsProvider"
 import Loading from "@/components/common/Loading"
 
 const Timeline = () => {

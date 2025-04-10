@@ -2,7 +2,7 @@ import React from "react"
 import Status from "@/components/layout/Status"
 import Timeline from "@/components/layout/Timeline"
 import Stamp from "@/components/common/Stamp"
-import StampsProvider from "@/components/common/StampsProvider"
+import StampsProvider from "@/providers/StampsProvider"
 
 const Home = () => {
   return (

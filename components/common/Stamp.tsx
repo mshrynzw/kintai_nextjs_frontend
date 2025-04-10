@@ -8,16 +8,18 @@ import {
 } from "lucide-react"
 import type {Stamp} from "@/types/stamp.types"
 import Loading from "@/components/common/Loading"
+import {useStamps} from "@/providers/StampsProvider"
 
 const Stamp = () => {
   const [lastStamp, setLastStamp] = useState<Stamp | null>(null)
   const [isLoading, setIsLoading] = useState(false)
+  const {fetchStamps} = useStamps()
 
   // 本日の打刻記録を取得
   useEffect(() => {
     const fetchTodayStamps = async () => {
       try {
-        const response = await fetch(`http://localhost:8000/stamps`)
+        const response = await fetch(`http://localhost:8000/stamps?latest=true`)
         if (!response.ok) {
           throw new Error("打刻記録の取得に失敗しました")
         }
@@ -54,6 +56,7 @@ const Stamp = () => {
       const data = await response.json()
       console.log("打刻成功:", data)
       setLastStamp(data)
+      await fetchStamps()
     } catch (error) {
       console.error("打刻エラー:", error)
     } finally {
