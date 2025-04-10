@@ -2,7 +2,6 @@
 
 import React from "react"
 import {Calendar, Clock, Home, LogOut, MessageSquare, Settings} from "lucide-react"
-import Button from "@/components/common/Button"
 import {useFeature} from "@/context/FeatureContext"
 
 const Navi = () => {
@@ -63,9 +62,6 @@ const Navi = () => {
           ログアウト
         </li>
       </ul>
-      <div className="mt-6">
-        <Button/>
-      </div>
     </div>
   )
 }
