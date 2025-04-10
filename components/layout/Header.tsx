@@ -8,7 +8,7 @@ const Header = () => {
   const { isMenuOpen, handleIsMenuToggle } = useIsMenuOpen()
 
   return (
-    <div className="flex items-center justify-between">
+    <div className="flex items-center justify-between relative z-50">
       <div className="flex items-center">
         <button
           onClick={() => handleIsMenuToggle(!isMenuOpen)}
