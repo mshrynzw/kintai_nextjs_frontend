@@ -30,7 +30,9 @@ const StampsProvider = ({children}: StampsProviderProps) => {
   const fetchStamps = async () => {
     try {
       setIsLoading(true)
-      const response = await fetch(`http://localhost:8000/stamps?latest=false`)
+      const response = await fetch(`http://localhost:8000/stamps?latest=false`, {
+        credentials: 'include',
+      })
       if (!response.ok) {
         throw new Error("打刻記録の取得に失敗しました")
       }
