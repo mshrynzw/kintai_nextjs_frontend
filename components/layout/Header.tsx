@@ -19,10 +19,10 @@ const Header = () => {
         <h1 className="text-xl font-bold text-white">勤怠管理システム</h1>
       </div>
       <div className="flex items-center space-x-4">
-        <button className="p-2 rounded-full hover:bg-teal-600 hover:shadow transition-colors">
+        <button className="p-2 rounded-full hover:bg-teal-600 hover:shadow transition-colors cursor-pointer">
           <Bell className="w-5 h-5 text-white"/>
         </button>
-        <button className="flex items-center space-x-2 p-2 rounded-full hover:bg-teal-600 hover:shadow transition-colors">
+        <button className="flex items-center space-x-2 p-2 rounded-full hover:bg-teal-600 hover:shadow transition-colors cursor-pointer">
           <UserCircle className="w-6 h-6 text-white"/>
         </button>
       </div>
